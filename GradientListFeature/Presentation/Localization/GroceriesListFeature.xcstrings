@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "GROCERY_LIST_NO_ITEM_FOUND" : {
+      "comment" : "Message that appears on empty list",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No items"
+          }
+        }
+      }
+    },
     "GROCERY_LIST_TITLE" : {
       "comment" : "Title to show when the list first appears",
       "extractionState" : "manual",
