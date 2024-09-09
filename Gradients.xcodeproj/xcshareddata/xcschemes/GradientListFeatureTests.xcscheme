@@ -6,6 +6,22 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A0B7247E2C8F31AD003D3E4F"
+               BuildableName = "GroceryListFeatureTests.xctest"
+               BlueprintName = "GroceryListFeatureTests"
+               ReferencedContainer = "container:Gradients.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -20,8 +36,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A0B7247E2C8F31AD003D3E4F"
-               BuildableName = "GradientListFeatureTests.xctest"
-               BlueprintName = "GradientListFeatureTests"
+               BuildableName = "GroceryListFeatureTests.xctest"
+               BlueprintName = "GroceryListFeatureTests"
                ReferencedContainer = "container:Gradients.xcodeproj">
             </BuildableReference>
          </TestableReference>

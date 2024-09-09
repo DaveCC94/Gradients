@@ -1,14 +1,14 @@
 //
-//  GrocveryRemoveItemViewTests.swift
+//  GroceryRemoveItemViewModelTests.swift
 //  GradientListFeatureTests
 //
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
 import XCTest
-@testable import GradientListFeature
+@testable import GroceryListFeature
 
-final class GroveryRemoveItemViewModelTests: XCTestCase {
+final class GroceryRemoveItemViewModelTests: XCTestCase {
     func test_title_isLocalized() {
         XCTAssertEqual(makeSUT().title, NSLocalizedString("REMOVE_GROCERY_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key usage"))
     }
@@ -23,7 +23,11 @@ final class GroveryRemoveItemViewModelTests: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeSUT() -> GroveryRemoveItemViewModel {
-        GroveryRemoveItemViewModel()
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> GroceryRemoveItemViewModel {
+        let sut = GroceryRemoveItemViewModel()
+        
+        trackForMemoryLeaks(sut, file: file, line: line)
+        
+        return sut
     }
 }

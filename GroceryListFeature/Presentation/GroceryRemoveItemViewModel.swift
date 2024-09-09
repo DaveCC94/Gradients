@@ -5,7 +5,7 @@
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
-final class GroveryRemoveItemViewModel {
+final class GroceryRemoveItemViewModel {
     private enum LocalizableKey: String.LocalizationValue {
         case title = "REMOVE_GROCERY_TITLE"
         case confirmDeletionTitle = "REMOVE_BUTTON_TITLE"

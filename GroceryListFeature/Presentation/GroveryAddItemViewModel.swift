@@ -5,7 +5,7 @@
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
-final class GroveryAddItemViewModel {
+final class GroceryAddItemViewModel {
     private enum LocalizableKey: String.LocalizationValue {
         case title = "ADD_GROCERY_TITLE"
         case buttonTitle = "ADD_GROCERY_BUTTON_TITLE"

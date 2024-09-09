@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "86AAE691-4086-4AC9-998B-A6B7ECEE7FD7",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Gradients.xcodeproj",
+        "identifier" : "A0B7247E2C8F31AD003D3E4F",
+        "name" : "GroceryListFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

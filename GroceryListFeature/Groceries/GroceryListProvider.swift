@@ -5,7 +5,9 @@
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
-protocol GroceryListProvider: ObservableObject {
+import Combine
+
+public protocol GroceryListProvider: ObservableObject {
     var list: [GroceryItem] { get }
     
     func add(_ item: GroceryItem)

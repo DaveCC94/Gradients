@@ -1,14 +1,14 @@
 //
-//  GroceryAddViewTests.swift
+//  GroceryAddItemViewModelTests.swift
 //  GradientListFeatureTests
 //
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
 import XCTest
-@testable import GradientListFeature
+@testable import GroceryListFeature
 
-final class GroveryAddItemViewModelTests: XCTestCase {
+final class GroceryAddItemViewModelTests: XCTestCase {
     func test_title_isLocalized() {
         XCTAssertEqual(makeSUT().title, NSLocalizedString("ADD_GROCERY_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key usage"))
     }
@@ -23,7 +23,11 @@ final class GroveryAddItemViewModelTests: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeSUT() -> GroveryAddItemViewModel {
-        GroveryAddItemViewModel()
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> GroceryAddItemViewModel {
+        let sut = GroceryAddItemViewModel()
+        
+        trackForMemoryLeaks(sut, file: file, line: line)
+        
+        return sut
     }
 }

@@ -58,8 +58,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A0B7247E2C8F31AD003D3E4F"
-               BuildableName = "GradientListFeatureTests.xctest"
-               BlueprintName = "GradientListFeatureTests"
+               BuildableName = "GroceryListFeatureTests.xctest"
+               BlueprintName = "GroceryListFeatureTests"
                ReferencedContainer = "container:Gradients.xcodeproj">
             </BuildableReference>
          </TestableReference>

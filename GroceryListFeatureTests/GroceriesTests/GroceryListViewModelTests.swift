@@ -1,12 +1,12 @@
 //
-//  GradientListViewModel.swift
+//  GroceryListViewModelTests.swift
 //  GradientListFeatureTests
 //
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
 import XCTest
-@testable import GradientListFeature
+@testable import GroceryListFeature
 
 final class GroceryListViewModelTests: XCTestCase {
     func test_title_isLocalized() {
@@ -22,7 +22,7 @@ final class GroceryListViewModelTests: XCTestCase {
         let sut = makeSUT(listProvider: provider)
         
         assert(sut: sut, hasState: .empty)
-        assert(sut: sut, hasState: .content, when: { provider.add(fixtureItem()) })
+        assert(sut: sut, hasState: .content, when: { provider.add(fixtureGroceryItem()) })
         assert(sut: sut, hasState: .empty, when: { provider.remove(at: 0) })
     }
     
@@ -74,7 +74,7 @@ final class GroceryListViewModelTests: XCTestCase {
     func test_list_reflectsCurrentState() {
         let provider = fixtureProvider(numberOfItems: 0)
         let sut = makeSUT(listProvider: provider)
-        let fixture = fixtureItem()
+        let fixture = fixtureGroceryItem()
         
         XCTAssertEqual(sut.groceryItems, [])
         
@@ -92,16 +92,21 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertTrue(sut.state == state)
     }
     
-    private func makeSUT(listProvider: ProviderSpy = ProviderSpy()) -> GroceryListViewModel {
-        GroceryListViewModel(listProvider: listProvider)
+    private func makeSUT(listProvider: ProviderSpy = ProviderSpy(), file: StaticString = #filePath, line: UInt = #line) -> GroceryListViewModel {
+        let sut = GroceryListViewModel(listProvider: listProvider)
+        
+        trackForMemoryLeaks(sut, file: file, line: line)
+        
+        return sut
     }
     
-    private func fixtureProvider(numberOfItems: Int = 0) -> ProviderSpy {
-        ProviderSpy(list: Array(repeating: GroceryItem(name: "any name"), count: numberOfItems))
-    }
-    
-    private func fixtureItem(_ name: String = "fixture item") -> GroceryItem {
-        GroceryItem(name: name)
+    private func fixtureProvider(numberOfItems: Int = 0, file: StaticString = #filePath, line: UInt = #line) -> ProviderSpy {
+        let spy = ProviderSpy(list: Array(repeating: GroceryItem(name: "any name"), count: numberOfItems))
+        
+        trackForMemoryLeaks(spy, file: file, line: line)
+        
+        return spy
+        
     }
     
     final class ProviderSpy: GroceryListProvider {
@@ -122,7 +127,7 @@ final class GroceryListViewModelTests: XCTestCase {
             list.remove(at: index)
         }
         
-        func add(_ item: GradientListFeature.GroceryItem) {
+        func add(_ item: GroceryListFeature.GroceryItem) {
             calls.append(.add(item))
             list.append(item)
         }

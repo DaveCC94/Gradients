@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A01FCB5B2C8F36DF00FE1EC6 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB5A2C8F36DF00FE1EC6 /* GroceryItem.swift */; };
 		A01FCB5F2C8F38C600FE1EC6 /* GroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB5E2C8F38C600FE1EC6 /* GroceryListViewModel.swift */; };
-		A01FCB622C8F38FD00FE1EC6 /* GradientListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */; };
+		A01FCB622C8F38FD00FE1EC6 /* GroceryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB612C8F38FD00FE1EC6 /* GroceryListViewModelTests.swift */; };
 		A01FCB642C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
 		A01FCB682C8F43E500FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
 		A01FCB6B2C8F4F8400FE1EC6 /* LocalizableCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */; };
@@ -17,15 +17,18 @@
 		A01FCB6F2C8F821800FE1EC6 /* GroceryAddItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB6E2C8F821800FE1EC6 /* GroceryAddItemViewTests.swift */; };
 		A01FCB712C8F841A00FE1EC6 /* GroveryAddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB702C8F841A00FE1EC6 /* GroveryAddItemViewModel.swift */; };
 		A01FCB732C8F886900FE1EC6 /* GroceryRemoveItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB722C8F886900FE1EC6 /* GroceryRemoveItemViewModel.swift */; };
-		A01FCB752C8F88EF00FE1EC6 /* GrocveryRemoveItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB742C8F88EF00FE1EC6 /* GrocveryRemoveItemViewTests.swift */; };
+		A01FCB752C8F88EF00FE1EC6 /* GroceryRemoveItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB742C8F88EF00FE1EC6 /* GroceryRemoveItemViewTests.swift */; };
 		A01FCB782C8F89FA00FE1EC6 /* InMemoryGroceryListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB772C8F89FA00FE1EC6 /* InMemoryGroceryListProvider.swift */; };
+		A01FCB7C2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB7B2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift */; };
+		A01FCB7F2C8F8BA000FE1EC6 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB7E2C8F8BA000FE1EC6 /* Fixtures.swift */; };
+		A01FCB812C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB802C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift */; };
 		A0B724492C8F3175003D3E4F /* GradientsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B724482C8F3175003D3E4F /* GradientsApp.swift */; };
 		A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B7244C2C8F3176003D3E4F /* Assets.xcassets */; };
 		A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */; };
-		A0B724802C8F31AD003D3E4F /* GradientListFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B724782C8F31AD003D3E4F /* GradientListFeature.framework */; };
+		A0B724802C8F31AD003D3E4F /* GroceryListFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */; };
 		A0B724882C8F31AD003D3E4F /* GradientListFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B7247A2C8F31AD003D3E4F /* GradientListFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0B7248B2C8F31AD003D3E4F /* GradientListFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B724782C8F31AD003D3E4F /* GradientListFeature.framework */; };
-		A0B7248C2C8F31AD003D3E4F /* GradientListFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0B724782C8F31AD003D3E4F /* GradientListFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0B7248B2C8F31AD003D3E4F /* GroceryListFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */; };
+		A0B7248C2C8F31AD003D3E4F /* GroceryListFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A0B7248C2C8F31AD003D3E4F /* GradientListFeature.framework in Embed Frameworks */,
+				A0B7248C2C8F31AD003D3E4F /* GroceryListFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,16 +79,20 @@
 /* Begin PBXFileReference section */
 		A01FCB5A2C8F36DF00FE1EC6 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
 		A01FCB5E2C8F38C600FE1EC6 /* GroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModel.swift; sourceTree = "<group>"; };
-		A01FCB602C8F38FD00FE1EC6 /* GradientListFeatureTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradientListFeatureTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientListViewModelTests.swift; sourceTree = "<group>"; };
+		A01FCB602C8F38FD00FE1EC6 /* GroceryListFeatureTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroceryListFeatureTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A01FCB612C8F38FD00FE1EC6 /* GroceryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModelTests.swift; sourceTree = "<group>"; };
 		A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GroceriesListFeature.xcstrings; sourceTree = "<group>"; };
 		A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableCatalog.swift; sourceTree = "<group>"; };
 		A01FCB6C2C8F565D00FE1EC6 /* GroceryListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListProvider.swift; sourceTree = "<group>"; };
 		A01FCB6E2C8F821800FE1EC6 /* GroceryAddItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryAddItemViewTests.swift; sourceTree = "<group>"; };
 		A01FCB702C8F841A00FE1EC6 /* GroveryAddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroveryAddItemViewModel.swift; sourceTree = "<group>"; };
 		A01FCB722C8F886900FE1EC6 /* GroceryRemoveItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRemoveItemViewModel.swift; sourceTree = "<group>"; };
-		A01FCB742C8F88EF00FE1EC6 /* GrocveryRemoveItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrocveryRemoveItemViewTests.swift; sourceTree = "<group>"; };
+		A01FCB742C8F88EF00FE1EC6 /* GroceryRemoveItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRemoveItemViewTests.swift; sourceTree = "<group>"; };
 		A01FCB772C8F89FA00FE1EC6 /* InMemoryGroceryListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryGroceryListProvider.swift; sourceTree = "<group>"; };
+		A01FCB7B2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryGroceryListProviderTests.swift; sourceTree = "<group>"; };
+		A01FCB7E2C8F8BA000FE1EC6 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		A01FCB802C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		A05195D42C8F94DE00DC5225 /* GradientListFeature.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = GradientListFeature.xctestplan; path = GroceryListFeatureTests/GradientListFeature.xctestplan; sourceTree = SOURCE_ROOT; };
 		A0B724452C8F3175003D3E4F /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724482C8F3175003D3E4F /* GradientsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsApp.swift; sourceTree = "<group>"; };
 		A0B7244C2C8F3176003D3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,9 +100,9 @@
 		A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0B724562C8F3177003D3E4F /* GradientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724602C8F3177003D3E4F /* GradientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0B724782C8F31AD003D3E4F /* GradientListFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GradientListFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GroceryListFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B7247A2C8F31AD003D3E4F /* GradientListFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientListFeature.h; sourceTree = "<group>"; };
-		A0B7247F2C8F31AD003D3E4F /* GradientListFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientListFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B7247F2C8F31AD003D3E4F /* GroceryListFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryListFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B7248B2C8F31AD003D3E4F /* GradientListFeature.framework in Frameworks */,
+				A0B7248B2C8F31AD003D3E4F /* GroceryListFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B724802C8F31AD003D3E4F /* GradientListFeature.framework in Frameworks */,
+				A0B724802C8F31AD003D3E4F /* GroceryListFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,14 +183,41 @@
 			path = Persistance;
 			sourceTree = "<group>";
 		};
+		A01FCB792C8F8A2B00FE1EC6 /* GroceriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCB612C8F38FD00FE1EC6 /* GroceryListViewModelTests.swift */,
+				A01FCB6E2C8F821800FE1EC6 /* GroceryAddItemViewTests.swift */,
+				A01FCB742C8F88EF00FE1EC6 /* GroceryRemoveItemViewTests.swift */,
+			);
+			path = GroceriesTests;
+			sourceTree = "<group>";
+		};
+		A01FCB7A2C8F8A3D00FE1EC6 /* PersistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCB7B2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift */,
+			);
+			path = PersistanceTests;
+			sourceTree = "<group>";
+		};
+		A01FCB7D2C8F8B5F00FE1EC6 /* XCTest+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCB7E2C8F8BA000FE1EC6 /* Fixtures.swift */,
+				A01FCB802C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift */,
+			);
+			path = "XCTest+Helpers";
+			sourceTree = "<group>";
+		};
 		A0B7243C2C8F3175003D3E4F = {
 			isa = PBXGroup;
 			children = (
 				A0B724472C8F3175003D3E4F /* Gradients */,
 				A0B724592C8F3177003D3E4F /* GradientsTests */,
 				A0B724632C8F3177003D3E4F /* GradientsUITests */,
-				A0B724792C8F31AD003D3E4F /* GradientListFeature */,
-				A0B724852C8F31AD003D3E4F /* GradientListFeatureTests */,
+				A0B724792C8F31AD003D3E4F /* GroceryListFeature */,
+				A0B724852C8F31AD003D3E4F /* GroceryListFeatureTests */,
 				A0B724462C8F3175003D3E4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -194,8 +228,8 @@
 				A0B724452C8F3175003D3E4F /* Gradients.app */,
 				A0B724562C8F3177003D3E4F /* GradientsTests.xctest */,
 				A0B724602C8F3177003D3E4F /* GradientsUITests.xctest */,
-				A0B724782C8F31AD003D3E4F /* GradientListFeature.framework */,
-				A0B7247F2C8F31AD003D3E4F /* GradientListFeatureTests.xctest */,
+				A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */,
+				A0B7247F2C8F31AD003D3E4F /* GroceryListFeatureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,7 +267,7 @@
 			path = GradientsUITests;
 			sourceTree = "<group>";
 		};
-		A0B724792C8F31AD003D3E4F /* GradientListFeature */ = {
+		A0B724792C8F31AD003D3E4F /* GroceryListFeature */ = {
 			isa = PBXGroup;
 			children = (
 				A0B7247A2C8F31AD003D3E4F /* GradientListFeature.h */,
@@ -241,18 +275,19 @@
 				A01FCB5C2C8F387100FE1EC6 /* Groceries */,
 				A01FCB5D2C8F38B100FE1EC6 /* Presentation */,
 			);
-			path = GradientListFeature;
+			path = GroceryListFeature;
 			sourceTree = "<group>";
 		};
-		A0B724852C8F31AD003D3E4F /* GradientListFeatureTests */ = {
+		A0B724852C8F31AD003D3E4F /* GroceryListFeatureTests */ = {
 			isa = PBXGroup;
 			children = (
-				A01FCB602C8F38FD00FE1EC6 /* GradientListFeatureTests-Bridging-Header.h */,
-				A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */,
-				A01FCB6E2C8F821800FE1EC6 /* GroceryAddItemViewTests.swift */,
-				A01FCB742C8F88EF00FE1EC6 /* GrocveryRemoveItemViewTests.swift */,
+				A01FCB602C8F38FD00FE1EC6 /* GroceryListFeatureTests-Bridging-Header.h */,
+				A05195D42C8F94DE00DC5225 /* GradientListFeature.xctestplan */,
+				A01FCB7D2C8F8B5F00FE1EC6 /* XCTest+Helpers */,
+				A01FCB7A2C8F8A3D00FE1EC6 /* PersistanceTests */,
+				A01FCB792C8F8A2B00FE1EC6 /* GroceriesTests */,
 			);
-			path = GradientListFeatureTests;
+			path = GroceryListFeatureTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +359,9 @@
 			productReference = A0B724602C8F3177003D3E4F /* GradientsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		A0B724772C8F31AD003D3E4F /* GradientListFeature */ = {
+		A0B724772C8F31AD003D3E4F /* GroceryListFeature */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0B7248D2C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GradientListFeature" */;
+			buildConfigurationList = A0B7248D2C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GroceryListFeature" */;
 			buildPhases = (
 				A0B724732C8F31AD003D3E4F /* Headers */,
 				A0B724742C8F31AD003D3E4F /* Sources */,
@@ -337,14 +372,14 @@
 			);
 			dependencies = (
 			);
-			name = GradientListFeature;
+			name = GroceryListFeature;
 			productName = GradientListFeature;
-			productReference = A0B724782C8F31AD003D3E4F /* GradientListFeature.framework */;
+			productReference = A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A0B7247E2C8F31AD003D3E4F /* GradientListFeatureTests */ = {
+		A0B7247E2C8F31AD003D3E4F /* GroceryListFeatureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0B724912C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GradientListFeatureTests" */;
+			buildConfigurationList = A0B724912C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GroceryListFeatureTests" */;
 			buildPhases = (
 				A0B7247B2C8F31AD003D3E4F /* Sources */,
 				A0B7247C2C8F31AD003D3E4F /* Frameworks */,
@@ -355,9 +390,9 @@
 			dependencies = (
 				A0B724822C8F31AD003D3E4F /* PBXTargetDependency */,
 			);
-			name = GradientListFeatureTests;
+			name = GroceryListFeatureTests;
 			productName = GradientListFeatureTests;
-			productReference = A0B7247F2C8F31AD003D3E4F /* GradientListFeatureTests.xctest */;
+			productReference = A0B7247F2C8F31AD003D3E4F /* GroceryListFeatureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -388,7 +423,6 @@
 					A0B7247E2C8F31AD003D3E4F = {
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
-						TestTargetID = A0B724442C8F3175003D3E4F;
 					};
 				};
 			};
@@ -408,8 +442,8 @@
 				A0B724442C8F3175003D3E4F /* Gradients */,
 				A0B724552C8F3177003D3E4F /* GradientsTests */,
 				A0B7245F2C8F3177003D3E4F /* GradientsUITests */,
-				A0B724772C8F31AD003D3E4F /* GradientListFeature */,
-				A0B7247E2C8F31AD003D3E4F /* GradientListFeatureTests */,
+				A0B724772C8F31AD003D3E4F /* GroceryListFeature */,
+				A0B7247E2C8F31AD003D3E4F /* GroceryListFeatureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -498,8 +532,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01FCB6F2C8F821800FE1EC6 /* GroceryAddItemViewTests.swift in Sources */,
-				A01FCB752C8F88EF00FE1EC6 /* GrocveryRemoveItemViewTests.swift in Sources */,
-				A01FCB622C8F38FD00FE1EC6 /* GradientListViewModelTests.swift in Sources */,
+				A01FCB812C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift in Sources */,
+				A01FCB752C8F88EF00FE1EC6 /* GroceryRemoveItemViewTests.swift in Sources */,
+				A01FCB7C2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift in Sources */,
+				A01FCB7F2C8F8BA000FE1EC6 /* Fixtures.swift in Sources */,
+				A01FCB622C8F38FD00FE1EC6 /* GroceryListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,12 +555,12 @@
 		};
 		A0B724822C8F31AD003D3E4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0B724772C8F31AD003D3E4F /* GradientListFeature */;
+			target = A0B724772C8F31AD003D3E4F /* GroceryListFeature */;
 			targetProxy = A0B724812C8F31AD003D3E4F /* PBXContainerItemProxy */;
 		};
 		A0B7248A2C8F31AD003D3E4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0B724772C8F31AD003D3E4F /* GradientListFeature */;
+			target = A0B724772C8F31AD003D3E4F /* GroceryListFeature */;
 			targetProxy = A0B724892C8F31AD003D3E4F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -918,11 +955,10 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "GradientListFeatureTests/GradientListFeatureTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "GroceryListFeatureTests/GroceryListFeatureTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gradients";
 			};
 			name = Debug;
 		};
@@ -944,10 +980,9 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "GradientListFeatureTests/GradientListFeatureTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "GroceryListFeatureTests/GroceryListFeatureTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gradients";
 			};
 			name = Release;
 		};
@@ -990,7 +1025,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0B7248D2C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GradientListFeature" */ = {
+		A0B7248D2C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GroceryListFeature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0B7248E2C8F31AD003D3E4F /* Debug */,
@@ -999,7 +1034,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0B724912C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GradientListFeatureTests" */ = {
+		A0B724912C8F31AD003D3E4F /* Build configuration list for PBXNativeTarget "GroceryListFeatureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0B724922C8F31AD003D3E4F /* Debug */,
