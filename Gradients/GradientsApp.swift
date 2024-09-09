@@ -11,7 +11,7 @@ import SwiftUI
 struct GradientsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView()
         }
     }
 }
