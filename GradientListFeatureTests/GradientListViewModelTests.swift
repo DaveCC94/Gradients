@@ -10,10 +10,16 @@ import XCTest
 
 final class GroceryListViewModelTests: XCTestCase {
     func test_title_isLocalized() {
-        XCTAssertEqual(GroceryListViewModel().title, NSLocalizedString("GROCERY_LIST_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key existance"))
+        XCTAssertEqual(makeSUT().title, NSLocalizedString("GROCERY_LIST_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key existance"))
     }
     
     func test_emptyMessage_isLocalized() {
-        XCTAssertEqual(GroceryListViewModel().emptyStateMessage, NSLocalizedString("GROCERY_LIST_NO_ITEM_FOUND", tableName: "GroceriesListFeature", comment: "Verifying key existance"))
+        XCTAssertEqual(makeSUT().emptyStateMessage, NSLocalizedString("GROCERY_LIST_NO_ITEM_FOUND", tableName: "GroceriesListFeature", comment: "Verifying key existance"))
+    }
+    
+    // MARK: - Helpers:
+    
+    private func makeSUT() -> GroceryListViewModel {
+        GroceryListViewModel()
     }
 }
