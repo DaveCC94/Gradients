@@ -22,8 +22,8 @@ final class GroceryListViewModelTests: XCTestCase {
         let sut = makeSUT(listProvider: provider)
         
         assert(sut: sut, hasState: .empty)
-        assert(sut: sut, hasState: .content, when: { provider.list.append(fixtureItem()) })
-        assert(sut: sut, hasState: .empty, when: { provider.list.removeAll() })
+        assert(sut: sut, hasState: .content, when: { provider.add(fixtureItem()) })
+        assert(sut: sut, hasState: .empty, when: { provider.remove(at: 0) })
     }
     
     func test_onDeleteRequest_changesPathToDeleteView() {
@@ -62,6 +62,15 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertTrue(provider.calls.isEmpty)
     }
     
+    func test_onAddItem_insertsItemToProvider() {
+        let provider = fixtureProvider(numberOfItems: 0)
+        let sut = makeSUT(listProvider: provider)
+        
+        sut.addItem(name: "test")
+        
+        XCTAssertEqual(provider.calls, [.add(GroceryItem(name: "test"))])
+    }
+    
     // MARK: - Helpers:
     
     private func assert(sut: GroceryListViewModel, hasState state: GroceryListViewModel.State, when action: () -> Void = {}) {
@@ -83,6 +92,7 @@ final class GroceryListViewModelTests: XCTestCase {
     
     final class ProviderSpy: GroceryListProvider {
         enum Call: Equatable {
+            case add(GroceryItem)
             case remove(Int)
         }
         
@@ -95,6 +105,12 @@ final class GroceryListViewModelTests: XCTestCase {
         
         func remove(at index: Int) {
             calls.append(.remove(index))
+            list.remove(at: index)
+        }
+        
+        func add(_ item: GradientListFeature.GroceryItem) {
+            calls.append(.add(item))
+            list.append(item)
         }
     }
 }

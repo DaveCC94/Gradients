@@ -50,6 +50,10 @@ final class GroceryListViewModel {
         destination = .addItemView
     }
     
+    func addItem(name: String) {
+        listProvider.add(GroceryItem(name: name))
+    }
+    
     func deleteItem(at index: Int) throws {
         guard index >= 0 && index < listProvider.list.count else { throw Error.invalidIndex }
         
