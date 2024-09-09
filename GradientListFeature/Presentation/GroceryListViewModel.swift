@@ -11,15 +11,20 @@ final class GroceryListViewModel {
         case emptyStateMessage = "GROCERY_LIST_NO_ITEM_FOUND"
     }
     
-    var title: String {
-        String(localizedKey: LocalizableKey.title.rawValue)
+    enum State {
+        case empty
+        case content
     }
     
-    var emptyStateMessage: String {
-        String(localizedKey: LocalizableKey.emptyStateMessage.rawValue)
+    var state: State {
+        listProvider.list.count == 0 ? .empty : .content
     }
     
-    init() {
-        
+    var title: String { String(localizedKey: LocalizableKey.title.rawValue) }
+    var emptyStateMessage: String { String(localizedKey: LocalizableKey.emptyStateMessage.rawValue) }
+    var listProvider: any GroceryListProvider
+    
+    init(listProvider: any GroceryListProvider) {
+        self.listProvider = listProvider
     }
 }

@@ -13,6 +13,7 @@
 		A01FCB642C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
 		A01FCB682C8F43E500FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
 		A01FCB6B2C8F4F8400FE1EC6 /* LocalizableCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */; };
+		A01FCB6D2C8F565D00FE1EC6 /* GroceryListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB6C2C8F565D00FE1EC6 /* GroceryListProvider.swift */; };
 		A0B724492C8F3175003D3E4F /* GradientsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B724482C8F3175003D3E4F /* GradientsApp.swift */; };
 		A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B7244C2C8F3176003D3E4F /* Assets.xcassets */; };
 		A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientListViewModelTests.swift; sourceTree = "<group>"; };
 		A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GroceriesListFeature.xcstrings; sourceTree = "<group>"; };
 		A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableCatalog.swift; sourceTree = "<group>"; };
+		A01FCB6C2C8F565D00FE1EC6 /* GroceryListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListProvider.swift; sourceTree = "<group>"; };
 		A0B724452C8F3175003D3E4F /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724482C8F3175003D3E4F /* GradientsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsApp.swift; sourceTree = "<group>"; };
 		A0B7244C2C8F3176003D3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A01FCB5A2C8F36DF00FE1EC6 /* GroceryItem.swift */,
+				A01FCB6C2C8F565D00FE1EC6 /* GroceryListProvider.swift */,
 			);
 			path = Groceries;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			files = (
 				A01FCB5F2C8F38C600FE1EC6 /* GroceryListViewModel.swift in Sources */,
 				A01FCB6B2C8F4F8400FE1EC6 /* LocalizableCatalog.swift in Sources */,
+				A01FCB6D2C8F565D00FE1EC6 /* GroceryListProvider.swift in Sources */,
 				A01FCB5B2C8F36DF00FE1EC6 /* GroceryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
