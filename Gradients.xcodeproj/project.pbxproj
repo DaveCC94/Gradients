@@ -124,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A01FCB5C2C8F387100FE1EC6 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCB5A2C8F36DF00FE1EC6 /* GradientItem.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
 		A0B7243C2C8F3175003D3E4F = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A0B7247A2C8F31AD003D3E4F /* GradientListFeature.h */,
-				A01FCB5A2C8F36DF00FE1EC6 /* GradientItem.swift */,
+				A01FCB5C2C8F387100FE1EC6 /* Gradient */,
 			);
 			path = GradientListFeature;
 			sourceTree = "<group>";
