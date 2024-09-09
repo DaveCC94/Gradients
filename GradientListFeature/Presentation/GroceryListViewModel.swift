@@ -6,8 +6,12 @@
 //
 
 final class GroceryListViewModel {
+    private enum LocalizableKey: String.LocalizationValue {
+        case title = "GROCERY_LIST_TITLE"
+    }
+    
     var title: String {
-        String(localized: "GROCERY_LIST_TITLE", table: "GroceriesListFeature")
+        String(localizedKey: LocalizableKey.title.rawValue)
     }
     
     init() {

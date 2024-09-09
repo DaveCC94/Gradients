@@ -12,6 +12,7 @@
 		A01FCB622C8F38FD00FE1EC6 /* GradientListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */; };
 		A01FCB642C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
 		A01FCB682C8F43E500FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
+		A01FCB6B2C8F4F8400FE1EC6 /* LocalizableCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */; };
 		A0B724492C8F3175003D3E4F /* GradientsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B724482C8F3175003D3E4F /* GradientsApp.swift */; };
 		A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B7244C2C8F3176003D3E4F /* Assets.xcassets */; };
 		A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		A01FCB602C8F38FD00FE1EC6 /* GradientListFeatureTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradientListFeatureTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientListViewModelTests.swift; sourceTree = "<group>"; };
 		A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GroceriesListFeature.xcstrings; sourceTree = "<group>"; };
+		A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableCatalog.swift; sourceTree = "<group>"; };
 		A0B724452C8F3175003D3E4F /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724482C8F3175003D3E4F /* GradientsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsApp.swift; sourceTree = "<group>"; };
 		A0B7244C2C8F3176003D3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,8 +138,8 @@
 		A01FCB5D2C8F38B100FE1EC6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A01FCB692C8F4F7500FE1EC6 /* Localization */,
 				A01FCB5E2C8F38C600FE1EC6 /* GroceryListViewModel.swift */,
-				A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -147,6 +149,15 @@
 			children = (
 			);
 			path = "Localization Tests";
+			sourceTree = "<group>";
+		};
+		A01FCB692C8F4F7500FE1EC6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */,
+				A01FCB6A2C8F4F8400FE1EC6 /* LocalizableCatalog.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		A0B7243C2C8F3175003D3E4F = {
@@ -455,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01FCB5F2C8F38C600FE1EC6 /* GroceryListViewModel.swift in Sources */,
+				A01FCB6B2C8F4F8400FE1EC6 /* LocalizableCatalog.swift in Sources */,
 				A01FCB5B2C8F36DF00FE1EC6 /* GroceryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
