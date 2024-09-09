@@ -85,7 +85,7 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertEqual(sut.groceryItems, [])
     }
     
-    // MARK: - Helpers:
+    // MARK: - Helpers
     
     private func assert(sut: GroceryListViewModel, hasState state: GroceryListViewModel.State, when action: () -> Void = {}) {
         action()
