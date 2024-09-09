@@ -16,6 +16,10 @@ final class GroceryListViewModel {
         case content
     }
     
+    enum Destination  {
+        case addItemView
+    }
+    
     enum Path {
         case deleteView
     }
@@ -24,6 +28,7 @@ final class GroceryListViewModel {
         listProvider.list.count == 0 ? .empty : .content
     }
     
+    var destination: Destination?
     var path: Path?
     var title: String { String(localizedKey: LocalizableKey.title.rawValue) }
     var emptyStateMessage: String { String(localizedKey: LocalizableKey.emptyStateMessage.rawValue) }
@@ -33,7 +38,11 @@ final class GroceryListViewModel {
         self.listProvider = listProvider
     }
     
-    func showDeleteRequest() {
+    func showDeleteRequestView() {
         path = .deleteView
+    }
+    
+    func showAddNewItemView() {
+        destination = .addItemView
     }
 }

@@ -29,9 +29,17 @@ final class GroceryListViewModelTests: XCTestCase {
     func test_onDeleteRequest_changesPathToDeleteView() {
         let sut = makeSUT()
         
-        sut.showDeleteRequest()
+        sut.showDeleteRequestView()
         
         XCTAssertEqual(sut.path, .deleteView)
+    }
+    
+    func test_onAddItem_changesDestinationToAddItemView() {
+        let sut = makeSUT()
+        
+        sut.showAddNewItemView()
+        
+        XCTAssertEqual(sut.destination, .addItemView)
     }
     
     // MARK: - Helpers:
