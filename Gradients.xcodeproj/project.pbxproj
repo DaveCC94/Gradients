@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A01FCB5B2C8F36DF00FE1EC6 /* GradientItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB5A2C8F36DF00FE1EC6 /* GradientItem.swift */; };
+		A01FCB5B2C8F36DF00FE1EC6 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB5A2C8F36DF00FE1EC6 /* GroceryItem.swift */; };
+		A01FCB5F2C8F38C600FE1EC6 /* GroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB5E2C8F38C600FE1EC6 /* GroceryListViewModel.swift */; };
+		A01FCB622C8F38FD00FE1EC6 /* GradientListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */; };
+		A01FCB642C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
+		A01FCB682C8F43E500FE1EC6 /* GroceriesListFeature.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */; };
 		A0B724492C8F3175003D3E4F /* GradientsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B724482C8F3175003D3E4F /* GradientsApp.swift */; };
 		A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B7244C2C8F3176003D3E4F /* Assets.xcassets */; };
 		A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */; };
@@ -39,13 +43,6 @@
 			remoteGlobalIDString = A0B724772C8F31AD003D3E4F;
 			remoteInfo = GradientListFeature;
 		};
-		A0B724832C8F31AD003D3E4F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0B7243D2C8F3175003D3E4F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0B724442C8F3175003D3E4F;
-			remoteInfo = Gradients;
-		};
 		A0B724892C8F31AD003D3E4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0B7243D2C8F3175003D3E4F /* Project object */;
@@ -70,7 +67,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A01FCB5A2C8F36DF00FE1EC6 /* GradientItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientItem.swift; sourceTree = "<group>"; };
+		A01FCB5A2C8F36DF00FE1EC6 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		A01FCB5E2C8F38C600FE1EC6 /* GroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModel.swift; sourceTree = "<group>"; };
+		A01FCB602C8F38FD00FE1EC6 /* GradientListFeatureTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradientListFeatureTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientListViewModelTests.swift; sourceTree = "<group>"; };
+		A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GroceriesListFeature.xcstrings; sourceTree = "<group>"; };
 		A0B724452C8F3175003D3E4F /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724482C8F3175003D3E4F /* GradientsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsApp.swift; sourceTree = "<group>"; };
 		A0B7244C2C8F3176003D3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,12 +125,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A01FCB5C2C8F387100FE1EC6 /* Gradient */ = {
+		A01FCB5C2C8F387100FE1EC6 /* Groceries */ = {
 			isa = PBXGroup;
 			children = (
-				A01FCB5A2C8F36DF00FE1EC6 /* GradientItem.swift */,
+				A01FCB5A2C8F36DF00FE1EC6 /* GroceryItem.swift */,
 			);
-			path = Gradient;
+			path = Groceries;
+			sourceTree = "<group>";
+		};
+		A01FCB5D2C8F38B100FE1EC6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCB5E2C8F38C600FE1EC6 /* GroceryListViewModel.swift */,
+				A01FCB632C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A01FCB652C8F3CA500FE1EC6 /* Localization Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Localization Tests";
 			sourceTree = "<group>";
 		};
 		A0B7243C2C8F3175003D3E4F = {
@@ -193,7 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				A0B7247A2C8F31AD003D3E4F /* GradientListFeature.h */,
-				A01FCB5C2C8F387100FE1EC6 /* Gradient */,
+				A01FCB5C2C8F387100FE1EC6 /* Groceries */,
+				A01FCB5D2C8F38B100FE1EC6 /* Presentation */,
 			);
 			path = GradientListFeature;
 			sourceTree = "<group>";
@@ -201,6 +219,9 @@
 		A0B724852C8F31AD003D3E4F /* GradientListFeatureTests */ = {
 			isa = PBXGroup;
 			children = (
+				A01FCB602C8F38FD00FE1EC6 /* GradientListFeatureTests-Bridging-Header.h */,
+				A01FCB652C8F3CA500FE1EC6 /* Localization Tests */,
+				A01FCB612C8F38FD00FE1EC6 /* GradientListViewModelTests.swift */,
 			);
 			path = GradientListFeatureTests;
 			sourceTree = "<group>";
@@ -304,7 +325,6 @@
 			);
 			dependencies = (
 				A0B724822C8F31AD003D3E4F /* PBXTargetDependency */,
-				A0B724842C8F31AD003D3E4F /* PBXTargetDependency */,
 			);
 			name = GradientListFeatureTests;
 			productName = GradientListFeatureTests;
@@ -338,6 +358,7 @@
 					};
 					A0B7247E2C8F31AD003D3E4F = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = A0B724442C8F3175003D3E4F;
 					};
 				};
@@ -371,6 +392,7 @@
 			files = (
 				A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */,
 				A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */,
+				A01FCB682C8F43E500FE1EC6 /* GroceriesListFeature.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01FCB642C8F3B7C00FE1EC6 /* GroceriesListFeature.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +454,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01FCB5B2C8F36DF00FE1EC6 /* GradientItem.swift in Sources */,
+				A01FCB5F2C8F38C600FE1EC6 /* GroceryListViewModel.swift in Sources */,
+				A01FCB5B2C8F36DF00FE1EC6 /* GroceryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01FCB622C8F38FD00FE1EC6 /* GradientListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,11 +484,6 @@
 			isa = PBXTargetDependency;
 			target = A0B724772C8F31AD003D3E4F /* GradientListFeature */;
 			targetProxy = A0B724812C8F31AD003D3E4F /* PBXContainerItemProxy */;
-		};
-		A0B724842C8F31AD003D3E4F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0B724442C8F3175003D3E4F /* Gradients */;
-			targetProxy = A0B724832C8F31AD003D3E4F /* PBXContainerItemProxy */;
 		};
 		A0B7248A2C8F31AD003D3E4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -849,6 +869,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3U43ADBY7W;
@@ -861,6 +882,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "GradientListFeatureTests/GradientListFeatureTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gradients";
@@ -872,6 +895,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3U43ADBY7W;
@@ -884,6 +908,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "GradientListFeatureTests/GradientListFeatureTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gradients";

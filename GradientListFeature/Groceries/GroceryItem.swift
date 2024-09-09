@@ -5,7 +5,7 @@
 //  Created by David Castro Cisneros on 09/09/24.
 //
 
-public struct GradientItem {
+public struct GroceryItem {
     public let name: String
     
     public init(name: String) {
