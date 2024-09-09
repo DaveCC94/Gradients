@@ -26,6 +26,14 @@ final class GroceryListViewModelTests: XCTestCase {
         assert(sut: sut, hasState: .empty, when: { provider.list.removeAll() })
     }
     
+    func test_onDeleteRequest_changesPathToDeleteView() {
+        let sut = makeSUT()
+        
+        sut.showDeleteRequest()
+        
+        XCTAssertEqual(sut.path, .deleteView)
+    }
+    
     // MARK: - Helpers:
     
     private func assert(sut: GroceryListViewModel, hasState state: GroceryListViewModel.State, when action: () -> Void = {}) {

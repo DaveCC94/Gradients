@@ -16,15 +16,24 @@ final class GroceryListViewModel {
         case content
     }
     
+    enum Path {
+        case deleteView
+    }
+    
     var state: State {
         listProvider.list.count == 0 ? .empty : .content
     }
     
+    var path: Path?
     var title: String { String(localizedKey: LocalizableKey.title.rawValue) }
     var emptyStateMessage: String { String(localizedKey: LocalizableKey.emptyStateMessage.rawValue) }
     var listProvider: any GroceryListProvider
     
     init(listProvider: any GroceryListProvider) {
         self.listProvider = listProvider
+    }
+    
+    func showDeleteRequest() {
+        path = .deleteView
     }
 }
