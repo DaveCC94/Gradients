@@ -7,7 +7,7 @@
 
 final class GroceryListViewModel {
     var title: String {
-        String(localized: "GRADIENT_LIST_TITLE", table: "GroceriesListFeature")
+        String(localized: "GROCERY_LIST_TITLE", table: "GroceriesListFeature")
     }
     
     init() {
