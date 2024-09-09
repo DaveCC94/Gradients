@@ -20,16 +20,18 @@ final class GroceryListViewModelTests: XCTestCase {
     func test_state_changesBasedOnProvidedItems() {
         let provider = fixtureProvider(numberOfItems: 0)
         let sut = makeSUT(listProvider: provider)
-        XCTAssertTrue(sut.state == .empty)
         
-        provider.list.append(fixtureItem())
-        XCTAssertTrue(sut.state == .content)
-        
-        provider.list.removeAll()
-        XCTAssertTrue(sut.state == .empty)
+        assert(sut: sut, hasState: .empty)
+        assert(sut: sut, hasState: .content, when: { provider.list.append(fixtureItem()) })
+        assert(sut: sut, hasState: .empty, when: { provider.list.removeAll() })
     }
     
     // MARK: - Helpers:
+    
+    private func assert(sut: GroceryListViewModel, hasState state: GroceryListViewModel.State, when action: () -> Void = {}) {
+        action()
+        XCTAssertTrue(sut.state == state)
+    }
     
     private func makeSUT(listProvider: ProviderStub = ProviderStub()) -> GroceryListViewModel {
         GroceryListViewModel(listProvider: listProvider)
