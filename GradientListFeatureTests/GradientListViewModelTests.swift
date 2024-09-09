@@ -71,6 +71,20 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertEqual(provider.calls, [.add(GroceryItem(name: "test"))])
     }
     
+    func test_list_reflectsCurrentState() {
+        let provider = fixtureProvider(numberOfItems: 0)
+        let sut = makeSUT(listProvider: provider)
+        let fixture = fixtureItem()
+        
+        XCTAssertEqual(sut.groceryItems, [])
+        
+        provider.add(fixture)
+        XCTAssertEqual(sut.groceryItems, [fixture])
+        
+        provider.remove(at: 0)
+        XCTAssertEqual(sut.groceryItems, [])
+    }
+    
     // MARK: - Helpers:
     
     private func assert(sut: GroceryListViewModel, hasState state: GroceryListViewModel.State, when action: () -> Void = {}) {

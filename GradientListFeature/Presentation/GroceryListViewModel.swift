@@ -36,7 +36,12 @@ final class GroceryListViewModel {
     var path: Path?
     var title: String { String(localizedKey: LocalizableKey.title.rawValue) }
     var emptyStateMessage: String { String(localizedKey: LocalizableKey.emptyStateMessage.rawValue) }
-    var listProvider: any GroceryListProvider
+    
+    var groceryItems: [GroceryItem] {
+        listProvider.list
+    }
+    
+    private var listProvider: any GroceryListProvider
     
     init(listProvider: any GroceryListProvider) {
         self.listProvider = listProvider
