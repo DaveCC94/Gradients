@@ -42,6 +42,26 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertEqual(sut.destination, .addItemView)
     }
     
+    func test_onDeleteItem_deleteItemAtSpecifiedIndex() throws {
+        let provider = fixtureProvider(numberOfItems: 1)
+        let sut = makeSUT(listProvider: provider)
+        
+        try sut.deleteItem(at: 0)
+        
+        XCTAssertEqual(provider.calls, [.remove(0)])
+    }
+    
+    func test_onDeleteItem_throwsErrorOnInvalidIndex() throws {
+        let provider = fixtureProvider(numberOfItems: 0)
+        let sut = makeSUT(listProvider: provider)
+        
+        XCTAssertThrowsError(try sut.deleteItem(at: -1))
+        XCTAssertThrowsError(try sut.deleteItem(at: 0))
+        XCTAssertThrowsError(try sut.deleteItem(at: 1))
+        
+        XCTAssertTrue(provider.calls.isEmpty)
+    }
+    
     // MARK: - Helpers:
     
     private func assert(sut: GroceryListViewModel, hasState state: GroceryListViewModel.State, when action: () -> Void = {}) {
@@ -49,27 +69,32 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertTrue(sut.state == state)
     }
     
-    private func makeSUT(listProvider: ProviderStub = ProviderStub()) -> GroceryListViewModel {
+    private func makeSUT(listProvider: ProviderSpy = ProviderSpy()) -> GroceryListViewModel {
         GroceryListViewModel(listProvider: listProvider)
     }
     
-    private func fixtureProvider(numberOfItems: Int = 0) -> ProviderStub {
-        ProviderStub(list: Array(repeating: GroceryItem(name: "any name"), count: numberOfItems))
+    private func fixtureProvider(numberOfItems: Int = 0) -> ProviderSpy {
+        ProviderSpy(list: Array(repeating: GroceryItem(name: "any name"), count: numberOfItems))
     }
     
     private func fixtureItem(_ name: String = "fixture item") -> GroceryItem {
         GroceryItem(name: name)
     }
     
-    final class ProviderStub: GroceryListProvider {
+    final class ProviderSpy: GroceryListProvider {
+        enum Call: Equatable {
+            case remove(Int)
+        }
+        
         var list: [GroceryItem]
+        var calls = [Call]()
         
         init(list: [GroceryItem] = []) {
             self.list = list
         }
         
-        func getList() -> [GroceryItem] {
-            list
+        func remove(at index: Int) {
+            calls.append(.remove(index))
         }
     }
 }

@@ -7,4 +7,5 @@
 
 protocol GroceryListProvider: ObservableObject {
     var list: [GroceryItem] { get }
+    func remove(at index: Int)
 }

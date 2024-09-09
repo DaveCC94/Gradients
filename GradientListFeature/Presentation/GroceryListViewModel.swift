@@ -11,6 +11,10 @@ final class GroceryListViewModel {
         case emptyStateMessage = "GROCERY_LIST_NO_ITEM_FOUND"
     }
     
+    enum Error: Swift.Error {
+        case invalidIndex
+    }
+    
     enum State {
         case empty
         case content
@@ -44,5 +48,11 @@ final class GroceryListViewModel {
     
     func showAddNewItemView() {
         destination = .addItemView
+    }
+    
+    func deleteItem(at index: Int) throws {
+        guard index >= 0 && index < listProvider.list.count else { throw Error.invalidIndex }
+        
+        listProvider.remove(at: index)
     }
 }
