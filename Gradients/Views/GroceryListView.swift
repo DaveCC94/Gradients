@@ -30,12 +30,7 @@ struct GroceryListView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) { [weak viewModel] in
                 Button(action: { [weak viewModel] in
-                    viewModel?.showAddNewItemView()
-                    guard let viewModel, let nextViewModel = viewModel.showAddView else {
-                        assertionFailure("View model as nil, this is a developer error")
-                        return
-                    }
-                    coordinator.path.append(nextViewModel)
+                    coordinator.navigateToAddGrocery(onAddItem: viewModel?.addItem(name:))
                 }) {
                     Image(systemName: AppTheme.SystemIcon.add)
                         .foregroundStyle(AppTheme.Colors.primary)

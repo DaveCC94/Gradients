@@ -70,17 +70,7 @@ final class GroceryListViewModelTests: XCTestCase {
         
         XCTAssertNil(sut.showAddView)
     }
-    
-    func test_onAddItem_showsAndHidesAddItemView() {
-        let sut = makeSUT()
-        
-        sut.showAddNewItemView()
-        XCTAssertNotNil(sut.showAddView)
-        
-        sut.hideAddNewItemView()
-        XCTAssertNil(sut.showAddView)
-    }
-    
+  
     func test_onDeleteItem_deleteItemAtSpecifiedIndex() throws {
         let provider = fixtureProvider(numberOfItems: 1)
         let sut = makeSUT(listProvider: provider)

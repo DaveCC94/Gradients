@@ -41,16 +41,6 @@ public final class GroceryListViewModel: ObservableObject {
         showDeleteView = false
     }
     
-    public func showAddNewItemView() {
-        showAddView = GroceryAddItemViewModel(onAddItem: { [weak self] in
-            self?.addItem(name: $0)
-        })
-    }
-    
-    public func hideAddNewItemView() {
-        showAddView = nil
-    }
-    
     public func addItem(name: String) {
         listProvider.add(GroceryItem(name: name))
     }
