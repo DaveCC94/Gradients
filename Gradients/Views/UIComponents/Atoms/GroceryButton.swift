@@ -1,5 +1,5 @@
 //
-//  GroceryButton.swift
+//  AtomButton.swift
 //  Gradients
 //
 //  Created by David Castro Cisneros on 09/09/24.
@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct GroceryButton: View {
+struct AtomButton: View {
     private var title: String
     private var action: () -> Void
-    private var flexibleWidth = false
     
     init(_ title: String, action: @escaping () -> Void) {
         self.title = title
@@ -22,18 +21,17 @@ struct GroceryButton: View {
             action()
         }, label: {
             Text(title)
-                .padding(.horizontal)
-                .padding(.horizontal)
-                .frame(maxWidth: flexibleWidth ? .infinity : nil)
+                .padding(.horizontal, AppTheme.Spacing._3x)
+            
         })
-        .font(.system(size: 18, weight: .semibold))
+        .font(AppTheme.Fonts.button)
         .buttonStyle(.borderedProminent)
         .buttonBorderShape(.capsule)
         .controlSize(.large)
-        .padding()
+        .tint(AppTheme.Colors.primary)
     }
 }
 
-#Preview(body: {
-    GroceryButton("Test", action: {})
-})
+#Preview {
+    AtomButton("Test") { }
+}

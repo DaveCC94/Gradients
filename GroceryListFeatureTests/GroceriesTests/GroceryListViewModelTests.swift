@@ -17,6 +17,18 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertEqual(makeSUT().emptyStateMessage, NSLocalizedString("GROCERY_LIST_NO_ITEM_FOUND", tableName: "GroceriesListFeature", comment: "Verifying key existance"))
     }
    
+    func test_deleteTitle_isLocalized() {
+        XCTAssertEqual(makeSUT().deleteTitle, NSLocalizedString("REMOVE_GROCERY_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key usage"))
+    }
+    
+    func test_confirmDeletionTitle_isLocalized() {
+        XCTAssertEqual(makeSUT().confirmDeletionTitle, NSLocalizedString("REMOVE_BUTTON_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key usage"))
+    }
+    
+    func test_cancelDeletionTitle_isLocalized() {
+        XCTAssertEqual(makeSUT().cancelDeletionTitle, NSLocalizedString("CANCEL_REMOVAL_BUTTON_TITLE", tableName: "GroceriesListFeature", comment: "Verifying key usage"))
+    }
+    
     func test_state_changesBasedOnProvidedItems() {
         let provider = fixtureProvider(numberOfItems: 0)
         let sut = makeSUT(listProvider: provider)
@@ -26,27 +38,55 @@ final class GroceryListViewModelTests: XCTestCase {
         assert(sut: sut, hasState: .empty, when: { provider.remove(at: 0) })
     }
     
-    func test_onDeleteRequest_changesPathToDeleteView() {
+    func test_init_showDeleteViewIsFalse() {
         let sut = makeSUT()
         
-        sut.showDeleteRequestView()
+        XCTAssertFalse(sut.showDeleteView)
+    }
+ 
+    func test_onDeleteRequest_tracksIndex() {
+        let sut = makeSUT()
+        XCTAssertNil(sut.deleteRequestIndex)
         
-        XCTAssertEqual(sut.path, .deleteView)
+        sut.showDeleteRequestView(at: 0)
+        XCTAssertEqual(sut.deleteRequestIndex, 0)
+        
+        sut.hideDeleteRequestView()
+        XCTAssertNil(sut.deleteRequestIndex)
     }
     
-    func test_onAddItem_changesDestinationToAddItemView() {
+    func test_onDeleteRequest_showsAndHidesDeleteView() {
+        let sut = makeSUT()
+        
+        sut.showDeleteRequestView(at: 0)
+        XCTAssertTrue(sut.showDeleteView)
+        
+        sut.hideDeleteRequestView()
+        XCTAssertFalse(sut.showDeleteView)
+    }
+    
+    func test_init_showAddViewIsFalse() {
+        let sut = makeSUT()
+        
+        XCTAssertNil(sut.showAddView)
+    }
+    
+    func test_onAddItem_showsAndHidesAddItemView() {
         let sut = makeSUT()
         
         sut.showAddNewItemView()
+        XCTAssertNotNil(sut.showAddView)
         
-        XCTAssertEqual(sut.destination, .addItemView)
+        sut.hideAddNewItemView()
+        XCTAssertNil(sut.showAddView)
     }
     
     func test_onDeleteItem_deleteItemAtSpecifiedIndex() throws {
         let provider = fixtureProvider(numberOfItems: 1)
         let sut = makeSUT(listProvider: provider)
+        sut.deleteRequestIndex = 0
         
-        try sut.deleteItem(at: 0)
+        try sut.deleteItem()
         
         XCTAssertEqual(provider.calls, [.remove(0)])
     }
@@ -55,9 +95,14 @@ final class GroceryListViewModelTests: XCTestCase {
         let provider = fixtureProvider(numberOfItems: 0)
         let sut = makeSUT(listProvider: provider)
         
-        XCTAssertThrowsError(try sut.deleteItem(at: -1))
-        XCTAssertThrowsError(try sut.deleteItem(at: 0))
-        XCTAssertThrowsError(try sut.deleteItem(at: 1))
+        sut.deleteRequestIndex = -1
+        XCTAssertThrowsError(try sut.deleteItem())
+        
+        sut.deleteRequestIndex = 0
+        XCTAssertThrowsError(try sut.deleteItem())
+        
+        sut.deleteRequestIndex = 1
+        XCTAssertThrowsError(try sut.deleteItem())
         
         XCTAssertTrue(provider.calls.isEmpty)
     }

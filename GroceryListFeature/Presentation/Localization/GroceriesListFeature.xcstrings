@@ -1,6 +1,78 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "ADD_GROCERY_BUTTON_TITLE" : {
+      "comment" : "action suggested when adding a new item",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar"
+          }
+        }
+      }
+    },
+    "ADD_GROCERY_TEXTFIELD_TITLE" : {
+      "comment" : "The title on textfield for adding a grocery",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre"
+          }
+        }
+      }
+    },
+    "ADD_GROCERY_TITLE" : {
+      "comment" : "The page title when adding a new item",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Items"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar artículos"
+          }
+        }
+      }
+    },
+    "CANCEL_REMOVAL_BUTTON_TITLE" : {
+      "comment" : "Action title that omits the deletion of an item",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conservar"
+          }
+        }
+      }
+    },
     "GROCERY_LIST_NO_ITEM_FOUND" : {
       "comment" : "Message that appears on empty list",
       "extractionState" : "manual",
@@ -9,6 +81,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No items"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ningún artículo"
           }
         }
       }
@@ -21,6 +99,48 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Groceries"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Artículos"
+          }
+        }
+      }
+    },
+    "REMOVE_BUTTON_TITLE" : {
+      "comment" : "Action title that confirms the deletion of an item",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar"
+          }
+        }
+      }
+    },
+    "REMOVE_GROCERY_TITLE" : {
+      "comment" : "Title that lets the user know when something is about to be deleted",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to remove this item?"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Estás seguro de borrar este artículo?"
           }
         }
       }

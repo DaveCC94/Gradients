@@ -9,10 +9,8 @@ import SwiftUI
 
 struct GroceryRowView<Content: View>: View {
     @ViewBuilder private var content: () -> Content
-    private var showDivider: Bool
     
-    init(showDivider: Bool = false, content: @escaping () -> Content) {
-        self.showDivider = showDivider
+    init(content: @escaping () -> Content) {
         self.content = content
     }
     
@@ -20,29 +18,25 @@ struct GroceryRowView<Content: View>: View {
         VStack {
             HStack() {
                 content()
-                Spacer()
-            }
-            if showDivider {
-                Divider()
+                Spacer(minLength: .zero)
             }
             
+            Divider()
         }
         .padding(.horizontal)
     }
 }
 
-#Preview(body: {
+#Preview {
     VStack {
-        Divider()
-        GroceryRowView(showDivider: true) {
-            Text("Some row")
-        }
-        GroceryRowView(showDivider: true) {
-            Text("Some row")
-        }
         GroceryRowView {
             Text("Some row")
         }
-        Divider()
+        GroceryRowView {
+            Text("Some row2")
+        }
+        GroceryRowView {
+            Text("Some row3")
+        }
     }
-})
+}
