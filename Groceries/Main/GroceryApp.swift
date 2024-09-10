@@ -1,6 +1,6 @@
 //
-//  GradientsApp.swift
-//  Gradients
+//  GroceryApp.swift
+//  Groceries
 //
 //  Created by David Castro Cisneros on 09/09/24.
 //
@@ -9,9 +9,9 @@ import SwiftUI
 import GroceryListFeature
 
 @main
-struct GradientsApp: App {
+struct GroceryApp: App {
     @StateObject private var coordinator = Coordinator()
-    @ObservedObject var viewModel = GroceryListViewModel(listProvider: InMemoryGroceryListProvider())
+    @ObservedObject private var viewModel = GroceryListViewModel(listProvider: InMemoryGroceryListProvider())
     
     var body: some Scene {
         WindowGroup {

@@ -21,7 +21,6 @@ public final class GroceryListViewModel: ObservableObject {
         listProvider.list.count == 0 ? .empty : .content
     }
     
-    @Published public var showAddView: GroceryAddItemViewModel?
     @Published public var showDeleteView: Bool = false
     public var deleteRequestIndex: Int?
     public var groceryItems: [GroceryItem] { listProvider.list }

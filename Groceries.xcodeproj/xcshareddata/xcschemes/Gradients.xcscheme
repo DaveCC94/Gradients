@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A0B724442C8F3175003D3E4F"
-               BuildableName = "Gradients.app"
-               BlueprintName = "Gradients"
+               BuildableName = "Groceries.app"
+               BlueprintName = "Groceries"
                ReferencedContainer = "container:Gradients.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A0B724442C8F3175003D3E4F"
-            BuildableName = "Gradients.app"
-            BlueprintName = "Gradients"
+            BuildableName = "Groceries.app"
+            BlueprintName = "Groceries"
             ReferencedContainer = "container:Gradients.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -97,8 +97,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A0B724442C8F3175003D3E4F"
-            BuildableName = "Gradients.app"
-            BlueprintName = "Gradients"
+            BuildableName = "Groceries.app"
+            BlueprintName = "Groceries"
             ReferencedContainer = "container:Gradients.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
