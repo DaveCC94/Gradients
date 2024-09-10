@@ -22,6 +22,10 @@
 		A01FCB7C2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB7B2C8F8A5900FE1EC6 /* InMemoryGroceryListProviderTests.swift */; };
 		A01FCB7F2C8F8BA000FE1EC6 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB7E2C8F8BA000FE1EC6 /* Fixtures.swift */; };
 		A01FCB812C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FCB802C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift */; };
+		A05195D72C8F95C600DC5225 /* GroceryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05195D62C8F95C600DC5225 /* GroceryButton.swift */; };
+		A05195DA2C8F9C6200DC5225 /* GroceryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05195D92C8F9C6200DC5225 /* GroceryTextField.swift */; };
+		A05195DC2C8FD0A600DC5225 /* GroceryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05195DB2C8FD0A600DC5225 /* GroceryRowView.swift */; };
+		A05195DF2C8FD40400DC5225 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05195DE2C8FD40400DC5225 /* GroceryListView.swift */; };
 		A0B724492C8F3175003D3E4F /* GradientsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B724482C8F3175003D3E4F /* GradientsApp.swift */; };
 		A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B7244C2C8F3176003D3E4F /* Assets.xcassets */; };
 		A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */; };
@@ -32,20 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0B724572C8F3177003D3E4F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0B7243D2C8F3175003D3E4F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0B724442C8F3175003D3E4F;
-			remoteInfo = Gradients;
-		};
-		A0B724612C8F3177003D3E4F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0B7243D2C8F3175003D3E4F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0B724442C8F3175003D3E4F;
-			remoteInfo = Gradients;
-		};
 		A0B724812C8F31AD003D3E4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0B7243D2C8F3175003D3E4F /* Project object */;
@@ -93,13 +83,15 @@
 		A01FCB7E2C8F8BA000FE1EC6 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		A01FCB802C8F8CE800FE1EC6 /* XCTest+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		A05195D42C8F94DE00DC5225 /* GradientListFeature.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = GradientListFeature.xctestplan; path = GroceryListFeatureTests/GradientListFeature.xctestplan; sourceTree = SOURCE_ROOT; };
+		A05195D62C8F95C600DC5225 /* GroceryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryButton.swift; sourceTree = "<group>"; };
+		A05195D92C8F9C6200DC5225 /* GroceryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryTextField.swift; sourceTree = "<group>"; };
+		A05195DB2C8FD0A600DC5225 /* GroceryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRowView.swift; sourceTree = "<group>"; };
+		A05195DE2C8FD40400DC5225 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		A0B724452C8F3175003D3E4F /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724482C8F3175003D3E4F /* GradientsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsApp.swift; sourceTree = "<group>"; };
 		A0B7244C2C8F3176003D3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B7244E2C8F3176003D3E4F /* Gradients.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gradients.entitlements; sourceTree = "<group>"; };
 		A0B724502C8F3176003D3E4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A0B724562C8F3177003D3E4F /* GradientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0B724602C8F3177003D3E4F /* GradientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GroceryListFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B7247A2C8F31AD003D3E4F /* GradientListFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientListFeature.h; sourceTree = "<group>"; };
 		A0B7247F2C8F31AD003D3E4F /* GroceryListFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryListFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,20 +103,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B7248B2C8F31AD003D3E4F /* GroceryListFeature.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B724532C8F3177003D3E4F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B7245D2C8F3177003D3E4F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +188,37 @@
 			path = "XCTest+Helpers";
 			sourceTree = "<group>";
 		};
+		A05195D52C8F958900DC5225 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A05195D82C8F95CA00DC5225 /* Atoms */,
+				A05195DD2C8FD39100DC5225 /* Molecules */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		A05195D82C8F95CA00DC5225 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				A05195D62C8F95C600DC5225 /* GroceryButton.swift */,
+				A05195D92C8F9C6200DC5225 /* GroceryTextField.swift */,
+				A05195DB2C8FD0A600DC5225 /* GroceryRowView.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		A05195DD2C8FD39100DC5225 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				A05195DE2C8FD40400DC5225 /* GroceryListView.swift */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
 		A0B7243C2C8F3175003D3E4F = {
 			isa = PBXGroup;
 			children = (
 				A0B724472C8F3175003D3E4F /* Gradients */,
-				A0B724592C8F3177003D3E4F /* GradientsTests */,
-				A0B724632C8F3177003D3E4F /* GradientsUITests */,
 				A0B724792C8F31AD003D3E4F /* GroceryListFeature */,
 				A0B724852C8F31AD003D3E4F /* GroceryListFeatureTests */,
 				A0B724462C8F3175003D3E4F /* Products */,
@@ -226,8 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				A0B724452C8F3175003D3E4F /* Gradients.app */,
-				A0B724562C8F3177003D3E4F /* GradientsTests.xctest */,
-				A0B724602C8F3177003D3E4F /* GradientsUITests.xctest */,
 				A0B724782C8F31AD003D3E4F /* GroceryListFeature.framework */,
 				A0B7247F2C8F31AD003D3E4F /* GroceryListFeatureTests.xctest */,
 			);
@@ -237,6 +238,7 @@
 		A0B724472C8F3175003D3E4F /* Gradients */ = {
 			isa = PBXGroup;
 			children = (
+				A05195D52C8F958900DC5225 /* UIComponents */,
 				A0B724482C8F3175003D3E4F /* GradientsApp.swift */,
 				A0B7244C2C8F3176003D3E4F /* Assets.xcassets */,
 				A0B7244E2C8F3176003D3E4F /* Gradients.entitlements */,
@@ -253,20 +255,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A0B724592C8F3177003D3E4F /* GradientsTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GradientsTests;
-			sourceTree = "<group>";
-		};
-		A0B724632C8F3177003D3E4F /* GradientsUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GradientsUITests;
-			sourceTree = "<group>";
-		};
 		A0B724792C8F31AD003D3E4F /* GroceryListFeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +269,8 @@
 		A0B724852C8F31AD003D3E4F /* GroceryListFeatureTests */ = {
 			isa = PBXGroup;
 			children = (
-				A01FCB602C8F38FD00FE1EC6 /* GroceryListFeatureTests-Bridging-Header.h */,
 				A05195D42C8F94DE00DC5225 /* GradientListFeature.xctestplan */,
+				A01FCB602C8F38FD00FE1EC6 /* GroceryListFeatureTests-Bridging-Header.h */,
 				A01FCB7D2C8F8B5F00FE1EC6 /* XCTest+Helpers */,
 				A01FCB7A2C8F8A3D00FE1EC6 /* PersistanceTests */,
 				A01FCB792C8F8A2B00FE1EC6 /* GroceriesTests */,
@@ -322,42 +310,6 @@
 			productName = Gradients;
 			productReference = A0B724452C8F3175003D3E4F /* Gradients.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A0B724552C8F3177003D3E4F /* GradientsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0B7246D2C8F3177003D3E4F /* Build configuration list for PBXNativeTarget "GradientsTests" */;
-			buildPhases = (
-				A0B724522C8F3177003D3E4F /* Sources */,
-				A0B724532C8F3177003D3E4F /* Frameworks */,
-				A0B724542C8F3177003D3E4F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0B724582C8F3177003D3E4F /* PBXTargetDependency */,
-			);
-			name = GradientsTests;
-			productName = GradientsTests;
-			productReference = A0B724562C8F3177003D3E4F /* GradientsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A0B7245F2C8F3177003D3E4F /* GradientsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0B724702C8F3177003D3E4F /* Build configuration list for PBXNativeTarget "GradientsUITests" */;
-			buildPhases = (
-				A0B7245C2C8F3177003D3E4F /* Sources */,
-				A0B7245D2C8F3177003D3E4F /* Frameworks */,
-				A0B7245E2C8F3177003D3E4F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0B724622C8F3177003D3E4F /* PBXTargetDependency */,
-			);
-			name = GradientsUITests;
-			productName = GradientsUITests;
-			productReference = A0B724602C8F3177003D3E4F /* GradientsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		A0B724772C8F31AD003D3E4F /* GroceryListFeature */ = {
 			isa = PBXNativeTarget;
@@ -408,14 +360,6 @@
 					A0B724442C8F3175003D3E4F = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					A0B724552C8F3177003D3E4F = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = A0B724442C8F3175003D3E4F;
-					};
-					A0B7245F2C8F3177003D3E4F = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = A0B724442C8F3175003D3E4F;
-					};
 					A0B724772C8F31AD003D3E4F = {
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
@@ -440,8 +384,6 @@
 			projectRoot = "";
 			targets = (
 				A0B724442C8F3175003D3E4F /* Gradients */,
-				A0B724552C8F3177003D3E4F /* GradientsTests */,
-				A0B7245F2C8F3177003D3E4F /* GradientsUITests */,
 				A0B724772C8F31AD003D3E4F /* GroceryListFeature */,
 				A0B7247E2C8F31AD003D3E4F /* GroceryListFeatureTests */,
 			);
@@ -456,20 +398,6 @@
 				A0B724512C8F3176003D3E4F /* Preview Assets.xcassets in Resources */,
 				A0B7244D2C8F3176003D3E4F /* Assets.xcassets in Resources */,
 				A01FCB682C8F43E500FE1EC6 /* GroceriesListFeature.xcstrings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B724542C8F3177003D3E4F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B7245E2C8F3177003D3E4F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,20 +424,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B724492C8F3175003D3E4F /* GradientsApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B724522C8F3177003D3E4F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B7245C2C8F3177003D3E4F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A05195DA2C8F9C6200DC5225 /* GroceryTextField.swift in Sources */,
+				A05195DF2C8FD40400DC5225 /* GroceryListView.swift in Sources */,
+				A05195D72C8F95C600DC5225 /* GroceryButton.swift in Sources */,
+				A05195DC2C8FD0A600DC5225 /* GroceryRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,16 +461,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0B724582C8F3177003D3E4F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0B724442C8F3175003D3E4F /* Gradients */;
-			targetProxy = A0B724572C8F3177003D3E4F /* PBXContainerItemProxy */;
-		};
-		A0B724622C8F3177003D3E4F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0B724442C8F3175003D3E4F /* Gradients */;
-			targetProxy = A0B724612C8F3177003D3E4F /* PBXContainerItemProxy */;
-		};
 		A0B724822C8F31AD003D3E4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0B724772C8F31AD003D3E4F /* GroceryListFeature */;
@@ -713,6 +621,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,99 +661,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A0B7246E2C8F3177003D3E4F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U43ADBY7W;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testing.GradientsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gradients";
-			};
-			name = Debug;
-		};
-		A0B7246F2C8F3177003D3E4F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U43ADBY7W;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testing.GradientsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gradients";
-			};
-			name = Release;
-		};
-		A0B724712C8F3177003D3E4F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U43ADBY7W;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testing.GradientsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Gradients;
-			};
-			name = Debug;
-		};
-		A0B724722C8F3177003D3E4F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U43ADBY7W;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testing.GradientsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Gradients;
 			};
 			name = Release;
 		};
@@ -1003,24 +823,6 @@
 			buildConfigurations = (
 				A0B7246B2C8F3177003D3E4F /* Debug */,
 				A0B7246C2C8F3177003D3E4F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0B7246D2C8F3177003D3E4F /* Build configuration list for PBXNativeTarget "GradientsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0B7246E2C8F3177003D3E4F /* Debug */,
-				A0B7246F2C8F3177003D3E4F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0B724702C8F3177003D3E4F /* Build configuration list for PBXNativeTarget "GradientsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0B724712C8F3177003D3E4F /* Debug */,
-				A0B724722C8F3177003D3E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
