@@ -41,6 +41,10 @@ public final class GroceryListViewModel: ObservableObject {
     }
     
     public func addItem(name: String) {
+        let nameSanitized = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !nameSanitized.isEmpty else {
+            return
+        }
         listProvider.add(GroceryItem(name: name))
     }
     

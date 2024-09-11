@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GroceryRowView<Content: View>: View {
+struct AtomRowView<Content: View>: View {
     @ViewBuilder private var content: () -> Content
     
     init(content: @escaping () -> Content) {
@@ -29,13 +29,13 @@ struct GroceryRowView<Content: View>: View {
 
 #Preview {
     VStack {
-        GroceryRowView {
+        AtomRowView {
             Text("Some row")
         }
-        GroceryRowView {
+        AtomRowView {
             Text("Some row2")
         }
-        GroceryRowView {
+        AtomRowView {
             Text("Some row3")
         }
     }

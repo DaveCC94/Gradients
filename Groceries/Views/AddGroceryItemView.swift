@@ -20,7 +20,7 @@ struct AddGroceryItemView: View {
     var body: some View {
         VStack {
             Divider()
-            GroceryTextField(viewModel.textFieldTitle, text: $text)
+            AtomTextField(viewModel.textFieldTitle, text: $text)
             AtomButton(viewModel.buttonTitle, action: { [weak viewModel] in
                 viewModel?.onAddItem?(text)
                 coordinator.pop()

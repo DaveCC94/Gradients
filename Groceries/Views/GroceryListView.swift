@@ -6,6 +6,7 @@
 //
 
 import GroceryListFeature
+import SwiftData
 import SwiftUI
 
 struct GroceryListView: View {
@@ -35,6 +36,7 @@ struct GroceryListView: View {
                     Image(systemName: AppTheme.SystemIcon.add)
                         .foregroundStyle(AppTheme.Colors.primary)
                 }
+                .accessibilityIdentifier("ADD_NEW_BUTTON")
             }
         }
         .alert(viewModel.deleteTitle, isPresented: $viewModel.showDeleteView) { [unowned viewModel] in
@@ -61,12 +63,16 @@ struct GroceryListView: View {
     @ViewBuilder func content() -> some View {
         VStack(spacing: .zero) {
             MoleculeListView(items: viewModel.groceryItems, content: { index, grocery in
-                Text(grocery.name)
-                    .onTapGesture { [weak viewModel] in
-                        viewModel?.showDeleteRequestView(at: index)
-                    }
+                HStack {
+                    Text(grocery.name)
+                    Spacer(minLength: .zero)
+                }
+                .contentShape(Rectangle())
+                .onTapGesture { [weak viewModel] in
+                    viewModel?.showDeleteRequestView(at: index)
+                }
             })
-        
+            
             Spacer(minLength: 0)
         }
     }

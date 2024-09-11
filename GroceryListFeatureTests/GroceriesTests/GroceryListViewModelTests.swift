@@ -64,12 +64,6 @@ final class GroceryListViewModelTests: XCTestCase {
         sut.hideDeleteRequestView()
         XCTAssertFalse(sut.showDeleteView)
     }
-    
-    func test_init_showAddViewIsFalse() {
-        let sut = makeSUT()
-        
-        XCTAssertNil(sut.showAddView)
-    }
   
     func test_onDeleteItem_deleteItemAtSpecifiedIndex() throws {
         let provider = fixtureProvider(numberOfItems: 1)
@@ -95,6 +89,16 @@ final class GroceryListViewModelTests: XCTestCase {
         XCTAssertThrowsError(try sut.deleteItem())
         
         XCTAssertTrue(provider.calls.isEmpty)
+    }
+
+    func test_onAddItem_doesNotAddItIfEmpty() {
+        let provider = fixtureProvider(numberOfItems: 0)
+        let sut = makeSUT(listProvider: provider)
+        
+        sut.addItem(name: "")
+        sut.addItem(name: "    ")
+        
+        XCTAssertEqual(provider.calls, [])
     }
     
     func test_onAddItem_insertsItemToProvider() {

@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "393AB8F8-4059-407D-A143-A31D2EECFDDE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Groceries.xcodeproj",
+      "identifier" : "A094BF2D2C901CDC00937C3F",
+      "name" : "Groceries"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Groceries.xcodeproj",
+        "identifier" : "A094BF462C901CDD00937C3F",
+        "name" : "GroceriesUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Groceries.xcodeproj",
+        "identifier" : "A0B7247E2C8F31AD003D3E4F",
+        "name" : "GroceryListFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

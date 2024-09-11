@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GroceryTextField: View {
+struct AtomTextField: View {
     @Binding var text: String
     
     private var title: String
@@ -33,6 +33,7 @@ struct GroceryTextField: View {
                     .cornerRadius(AppTheme.Roundness.small)
                     
             })
+            .accessibilityElement(children: .combine)
             
             Spacer()
         }
@@ -43,5 +44,5 @@ struct GroceryTextField: View {
 #Preview {
     @State var text: String = ""
     
-    return GroceryTextField("Test", text: $text)
+    return AtomTextField("Test", text: $text)
 }

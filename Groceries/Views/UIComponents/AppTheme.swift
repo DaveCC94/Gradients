@@ -8,14 +8,6 @@
 import CoreGraphics
 import SwiftUI
 
-extension Color {
-    init(light: UIColor, dark: UIColor) {
-        self = Color(UIColor { traitCollection in
-            return traitCollection.userInterfaceStyle == .dark ? dark : light
-        })
-    }
-}
-
 final class AppTheme {
     enum SystemIcon {
         static let add: String = "plus"
@@ -28,20 +20,20 @@ final class AppTheme {
     }
     
     enum Fonts {
-        static let button: Font = .system(size: 14, weight: .semibold)
-        static let placeholder: Font = .system(size: 16, weight: .semibold)
-        static let regular: Font = .system(size: 14, weight: .regular)
+        static let button: Font = .body
+        static let placeholder: Font = .body
+        static let regular: Font = .body
     }
     
     enum Colors {
-        static let primary: Color = .blue
+        static let primary: Color = Color(red: 0.0, green: 0.4, blue: 1)
         static let textPrimary: Color = Color(light: .black, dark: .white)
         static let textFieldForeground: Color = Color(light: .black, dark: .black)
-        static let textFieldBackground: Color = Color(red: 0.925, green: 0.925, blue: 0.925)
+        static let textFieldBackground: Color = Color(red: 0.9, green: 0.9, blue: 0.9)
     }
     
     enum Size {
-        static let medium: CGFloat = 48
+        static let medium: CGFloat = 52
     }
     
     enum Roundness {
@@ -49,4 +41,14 @@ final class AppTheme {
     }
     
     private init() { }
+}
+
+// MARK: - Dark Theme support
+
+private extension Color {
+    init(light: UIColor, dark: UIColor) {
+        self = Color(UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? dark : light
+        })
+    }
 }

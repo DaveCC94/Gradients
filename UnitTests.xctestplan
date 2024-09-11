@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "EFED24B7-58DF-4733-BF01-549170AF7F8E",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Groceries.xcodeproj",
+        "identifier" : "A0B7247E2C8F31AD003D3E4F",
+        "name" : "GroceryListFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

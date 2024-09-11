@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0B724442C8F3175003D3E4F"
+               BlueprintIdentifier = "A094BF2D2C901CDC00937C3F"
                BuildableName = "Groceries.app"
                BlueprintName = "Groceries"
-               ReferencedContainer = "container:Gradients.xcodeproj">
+               ReferencedContainer = "container:Groceries.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,18 +27,23 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:allTests.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0B724552C8F3177003D3E4F"
-               BuildableName = "GradientsTests.xctest"
-               BlueprintName = "GradientsTests"
-               ReferencedContainer = "container:Gradients.xcodeproj">
+               BlueprintIdentifier = "A094BF3C2C901CDD00937C3F"
+               BuildableName = "GroceriesTests.xctest"
+               BlueprintName = "GroceriesTests"
+               ReferencedContainer = "container:Groceries.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,21 +51,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0B7245F2C8F3177003D3E4F"
-               BuildableName = "GradientsUITests.xctest"
-               BlueprintName = "GradientsUITests"
-               ReferencedContainer = "container:Gradients.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0B7247E2C8F31AD003D3E4F"
-               BuildableName = "GroceryListFeatureTests.xctest"
-               BlueprintName = "GroceryListFeatureTests"
-               ReferencedContainer = "container:Gradients.xcodeproj">
+               BlueprintIdentifier = "A094BF462C901CDD00937C3F"
+               BuildableName = "GroceriesUITests.xctest"
+               BlueprintName = "GroceriesUITests"
+               ReferencedContainer = "container:Groceries.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -79,10 +73,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0B724442C8F3175003D3E4F"
+            BlueprintIdentifier = "A094BF2D2C901CDC00937C3F"
             BuildableName = "Groceries.app"
             BlueprintName = "Groceries"
-            ReferencedContainer = "container:Gradients.xcodeproj">
+            ReferencedContainer = "container:Groceries.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -96,10 +90,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0B724442C8F3175003D3E4F"
+            BlueprintIdentifier = "A094BF2D2C901CDC00937C3F"
             BuildableName = "Groceries.app"
             BlueprintName = "Groceries"
-            ReferencedContainer = "container:Gradients.xcodeproj">
+            ReferencedContainer = "container:Groceries.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

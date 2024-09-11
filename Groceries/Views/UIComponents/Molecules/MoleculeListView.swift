@@ -18,11 +18,13 @@ struct MoleculeListView<Content: View, Data: Hashable>: View {
     
     var body: some View {
         List(items.indices, id: \.self) { index in
-            GroceryRowView {
+            AtomRowView {
                 content((index, items[index]))
             }
             .listRowSeparator(.hidden)
-            .listRowInsets(EdgeInsets(top: .zero, leading: -AppTheme.Spacing._1x, bottom: .zero, trailing: -AppTheme.Spacing._1x))
+            .listRowInsets(
+                EdgeInsets(top: .zero, leading: -AppTheme.Spacing._1x, bottom: .zero, trailing: -AppTheme.Spacing._1x)
+            )
         }
         .scrollContentBackground(.hidden)
     }
